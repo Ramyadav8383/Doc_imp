@@ -1,5 +1,7 @@
 # What is web3 ? what are the types and why web3 is now in trending?
 
+Basically web3 is the next generation of the internet where we are utilizing blockchain technology and decentralization tools,eg: ethereum, solana, polygon etc. In web 2.0 you were the product as you were browsing social netrworks but in web 3.0 some belives that you will be the owner of your content, the content or the stuff that you are posted online, so if you want a post to stay up it will stay up but if you want to take it down they say in web 3.0
+
 # what is HTTP and HTTPS
 
 An HTTP stands for Hypertext Transfer Protocol. The HTTP protocol provides communication between different communication systems. When the user makes an HTTP request on the browser, then the webserver sends the requested data to the user in the form of web pages. In short, we can say that the HTTP protocol allows us to transfer the data from the server to the client.
