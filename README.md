@@ -34,6 +34,86 @@ The speed of HTTP is faster than the HTTPS as the HTTPS contains SSL protocol, w
 
 # what is DNS and how its works?
 
+The Domain Name System (DNS) is the phonebook of the Internet. When users type domain names such as ‘google.com’ or ‘nytimes.com’ into web browsers, DNS is responsible for finding the correct IP address for those sites. Browsers then use those addresses to communicate with origin servers or CDN edge servers to access website information.
+
+How do DNS servers resolve a DNS query?
+In a typical DNS query without any caching, there are four servers that work together to deliver an IP address to the client: recursive resolvers, root nameservers, TLD nameservers, and authoritative nameservers.
+
+The DNS recursor (also referred to as the DNS resolver) is a server that receives the query from the DNS client, and then interacts with other DNS servers to hunt down the correct IP. Once the resolver receives the request from the client, the resolver then actually behaves as a client itself, querying the other three types of DNS servers in search of the right IP.
+
+The Internet’s DNS system works much like a phone book by managing the mapping between names and numbers. DNS servers translate requests for names into IP addresses, controlling which server an end user will reach when they type a domain name into their web browser. These requests are called queries.
+DNS, or the Domain Name System, translates human readable domain names (for example, www.amazon.com) to machine readable IP addresses (for example, 192.0.2.44).
+
+Types of DNS Service
+Authoritative DNS: An authoritative DNS service provides an update mechanism that developers use to manage their public DNS names. It then answers DNS queries, translating domain names into IP address so computers can communicate with each other. Authoritative DNS has the final authority over a domain and is responsible for providing answers to recursive DNS servers with the IP address information. Amazon Route 53 is an authoritative DNS system.
+
+Recursive DNS: Clients typically do not make queries directly to authoritative DNS services. Instead, they generally connect to another type of DNS service known a resolver, or a recursive DNS service. A recursive DNS service acts like a hotel concierge: while it doesn't own any DNS records, it acts as an intermediary who can get the DNS information on your behalf. If a recursive DNS has the DNS reference cached, or stored for a period of time, then it answers the DNS query by providing the source or IP information. If not, it passes the query to one or more authoritative DNS servers to find the information.
+
 # What is domain Name? how it works
 
+In simplest terms a domain name is just the address to your website so think of the internet as a vast map full of avenues and streets and turns everywhere and think of your website as your house in order for anyone to find their way to your house even you you will need an address this address is your domain name every website has an ip and an ip is just a seemingly random string of numbers. so when you register and purchase a domain name its almost like saving your home address as home into your phone.it gives that ip address a simple easy to remember name that anyone can type in and get to your website this is because it would be really difficult to remember a random string of numbers every time. you wanna go to apple.com or amazon.com or whatever it may be let's say create a dummywebsite.com you can remember that rather than 66.134.299. so let's say that you type in create a dummywebsite.com whenever you hit enter your computer sends a request to a bunch of servers that make up the dns and its stands domain name system this domain name system looks up the
+correct ip address and just points your computer into the right direction all within less than a millisecond.
+
 # what is hosting and explain different type of hosting.
+
+Web Hosting is a service that allows hosting/post-web-server applications( website or web page ) on a computer system through which web-browser clients can have easy access to electronic content on the Internet.
+
+Web Server or Web Host is a computer system that provide web hosting. When Internet user’s want to view your website, all they need to do is type your website address or domain into their browser. The user’s computer will then connect to your server and your web pages will be delivered to them through the browser. Basically, the web hosts allow the customers to place documents, such as HTML pages, graphics, and other multimedia files, etc. onto a special type of computer called a web server. It provides a constant and high-speed connection to the backbone of the Internet.
+
+Different types of Web hosting services are listed below:
+
+1.Free Hosting
+2.Virtual or Shared Hosting
+3.Dedicated Hosting
+4.Co-location Hosting
+
+Free Hosting:
+This is a free non-paid web hosting service. This type of hosting is available with many prominent sites that offer to host some web pages for no cost, like Hostinger.
+
+Advantages :
+Free of cost
+Use websites to place advertisements. banners and other forms of advertising media
+
+Disadvantages:
+Customer support is missing
+Low bandwidth and lesser data transfer
+No control over your website
+
+Shared/Virtual Hosting:
+It’s a web hosting service where many websites reside on one web server connected to the internet. This type of hosting is provided under one’s own domain name, www.yourname.com. With a hosting plan with the web hosting company, one can present oneself as a fully independent identity to his/her web audience, like Lindo.
+
+Advantages:
+Easy and affordable
+Secured by hosting provider
+24/7 Technical support
+
+Disadvantages:
+Shared resources can slow down the whole server
+Less flexible than dedicated hosting
+
+Dedicated Hosting:
+Hosted on a dedicated server, this type of hosting is best suited for large websites with high traffic. In this, the company wishing to go online rents an entire web server from a hosting company. This is suitable for companies hosting larger websites, maintaining others’ sites or managing a big online mall, etc like Google Cloud.
+
+Advantages:
+Ideal for large business
+Strong database support
+Unlimited software support
+Powerful e-mail solutions
+Complete root access to your servers
+
+Disadvantages:
+Its very expensive
+Requires superior skill sets
+
+Co-located Hosting:
+This hosting lets you place your own web server on the premises of a service provider. It is similar to that of dedicated hosting except for the fact that the server is now provided by the user-company itself and its physical needs are met by the hosting company like AWS.
+
+Advantages:
+Greater Bandwidth High Up-Time
+Unlimited Software Options
+High Security
+
+Disadvantages:
+Difficult to configure and debug
+Its expensive
+Require high skills
